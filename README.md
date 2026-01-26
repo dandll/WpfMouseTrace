@@ -25,6 +25,10 @@ WpfMouseTrace鼠标痕迹显示软件
 - 轨迹颜色自定义
 - 配置持久化保存
 
+![alt text](Image/1.gif)
+
+![alt text](Image/2.gif)
+
 ## 技术架构
 
 ### 1. 主窗口 (MainWindow)
