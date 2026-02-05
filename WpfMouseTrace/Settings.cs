@@ -129,6 +129,11 @@ namespace WpfMouseTrace
             }
         }
 
+        public void ReLoad() 
+        {
+            _instance = Load();
+        }
+
         private static Settings Load()
         {
             try

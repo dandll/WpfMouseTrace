@@ -9,7 +9,7 @@
         Title="设置" Height="250" Width="400"
         WindowStartupLocation="CenterOwner"
         ResizeMode="NoResize"
-        Icon="pack://application:,,,/Resources/favicon(1).ico">
+        Icon="pack://application:,,,/Resources/favicon(1).ico" Closing="Window_Closing">
     <Grid Margin="20">
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
@@ -27,7 +27,7 @@
                     Maximum="100" 
                     TickFrequency="1" 
                     IsSnapToTickEnabled="True"
-                    Value="{Binding MaxTrailLength, Mode=TwoWay}"/>
+                    Value="{Binding MaxTrailLength, Mode=TwoWay}" ValueChanged="MaxTrailLengthSlider_ValueChanged" />
             <TextBlock Text="{Binding ElementName=MaxTrailLengthSlider, Path=Value, StringFormat={}{0:F0}}" 
                        Width="40" 
                        Margin="10,0,0,0" 

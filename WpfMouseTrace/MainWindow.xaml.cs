@@ -109,11 +109,18 @@ namespace WpfMouseTrace
             {
                 ApplySettings();
             }
+            else
+            {
+                ApplySettings();
+            }
         }
 
         private void ApplySettings()
         {
             var settings = Settings.Instance;
+
+            settings.ReLoad();
+
             TrailCanvas.MaxTrailLength = settings.MaxTrailLength;
             
             while (TrailCanvas.TrailPoints.Count > TrailCanvas.MaxTrailLength)

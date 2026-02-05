@@ -17,6 +17,6 @@
 <!--<Grid>
         
     </Grid>-->
-    <local:TrailCanvas x:Name="TrailCanvas" Background="Transparent"/>
+    <local:TrailCanvas x:Name="TrailCanvas" x:FieldModifier="public" Background="Transparent"/>
     <!--<local:MouseTrailRenderer x:Name="TrailRenderer" />-->
 </Window>
